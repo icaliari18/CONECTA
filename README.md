@@ -116,3 +116,56 @@ O projeto será desenvolvido em etapas. Inicialmente, serão definidos o problem
 Nas etapas seguintes, serão desenvolvidas as funcionalidades de gerenciamento, a integração entre a interface, a API e o banco de dados, além das verificações necessárias para manter os dados de cada instituição separados.
 
 O código-fonte e os scripts SQL serão mantidos em um único repositório no GitHub, com documentação atualizada ao longo do desenvolvimento. Arquivos de dependências instaladas, credenciais, senhas e tokens não serão publicados no repositório.
+
+
+## PARTE/ENTREGA 2 !!!!!!!!!!
+
+## 12. Banco de dados
+
+O Conecta utiliza o MySQL como sistema de gerenciamento de banco de dados. O banco de dados `conecta` possui tabelas relacionadas por meio de chaves primárias e estrangeiras.
+
+As principais tabelas são:
+
+- **instituicoes:** armazena os dados das instituições cadastradas.
+- **usuarios:** armazena os dados dos administradores e colaboradores, vinculados às suas instituições.
+- **atendimentos:** registra os atendimentos realizados pelas instituições.
+- **doacoes:** armazena informações sobre as doações recebidas.
+- **recursos:** controla os recursos disponíveis.
+- **voluntarios:** mantém os dados dos voluntários.
+- **eventos:** registra os eventos organizados pelas instituições.
+
+O script de criação dessas tabelas está disponível em `sql/conecta.sql`.
+
+## 13. Autenticação e controle de acesso
+
+O sistema possui cadastro de instituições e login de usuários integrados ao banco de dados.
+
+Durante o cadastro, a instituição cria sua conta e seu primeiro administrador. As senhas são protegidas utilizando hash com a biblioteca `bcryptjs`.
+
+A autenticação utiliza JSON Web Token (JWT), permitindo identificar os usuários e controlar o acesso às rotas protegidas da API.
+
+O backend possui dois middlewares principais:
+
+- **Autenticação:** verifica se o usuário está autenticado por meio de um token válido.
+- **Autorização:** verifica se o perfil do usuário possui permissão para acessar determinada funcionalidade.
+
+Os usuários possuem dois perfis: administrador e colaborador.
+
+Além disso, as consultas e operações são vinculadas ao identificador da instituição do usuário autenticado, mantendo os registros separados entre as instituições.
+
+## 14. Execução do backend
+
+Para executar o backend localmente, é necessário ter o Node.js e o MySQL instalados.
+
+1. Instalar as dependências do projeto com `npm install`.
+2. Configurar as variáveis de ambiente no arquivo `.env`, incluindo os dados de conexão com o MySQL e a chave secreta do JWT.
+3. Garantir que o banco de dados `conecta` esteja criado e que as tabelas tenham sido configuradas utilizando o script `sql/conecta.sql`.
+4. Iniciar o servidor com `npm run dev`.
+
+Após a inicialização, a API estará disponível em `http://localhost:3000`.
+
+## 15. Organização e segurança
+
+O projeto utiliza arquivos separados para organizar as rotas, os controladores, os middlewares e a conexão com o banco de dados.
+
+O arquivo `.env` contém configurações privadas e não deve ser publicado no GitHub. A pasta `node_modules` também não precisa ser enviada ao repositório, pois as dependências podem ser instaladas por meio do `package.json`.
