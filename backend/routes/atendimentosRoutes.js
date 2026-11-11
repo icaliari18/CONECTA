@@ -12,24 +12,48 @@ import {
     autenticar
 } from '../middlewares/autenticacao.js';
 
+import {
+    autorizar
+} from '../middlewares/autorizacao.js';
+
 const router = express.Router();
 
 // Todas as rotas exigem login
 router.use(autenticar);
 
 // Cadastrar atendimento
-router.post('/', cadastrarAtendimento);
+router.post(
+    '/',
+    autorizar('administrador', 'colaborador'),
+    cadastrarAtendimento
+);
 
 // Listar atendimentos
-router.get('/', listarAtendimentos);
+router.get(
+    '/',
+    autorizar('administrador', 'colaborador'),
+    listarAtendimentos
+);
 
 // Buscar atendimento específico
-router.get('/:id', buscarAtendimento);
+router.get(
+    '/:id',
+    autorizar('administrador', 'colaborador'),
+    buscarAtendimento
+);
 
 // Atualizar atendimento
-router.put('/:id', atualizarAtendimento);
+router.put(
+    '/:id',
+    autorizar('administrador', 'colaborador'),
+    atualizarAtendimento
+);
 
-// Excluir atendimento
-router.delete('/:id', excluirAtendimento);
+// Excluir atendimento (somente administrador)
+router.delete(
+    '/:id',
+    autorizar('administrador'),
+    excluirAtendimento
+);
 
 export default router;

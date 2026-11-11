@@ -1,4 +1,3 @@
-
 import express from 'express';
 
 import {
@@ -13,14 +12,48 @@ import {
     autenticar
 } from '../middlewares/autenticacao.js';
 
+import {
+    autorizar
+} from '../middlewares/autorizacao.js';
+
 const router = express.Router();
 
+// Todas as rotas exigem autenticação
 router.use(autenticar);
 
-router.post('/', cadastrarVoluntario);
-router.get('/', listarVoluntarios);
-router.get('/:id', buscarVoluntario);
-router.put('/:id', atualizarVoluntario);
-router.delete('/:id', excluirVoluntario);
+// Cadastrar voluntário
+router.post(
+    '/',
+    autorizar('administrador', 'colaborador'),
+    cadastrarVoluntario
+);
+
+// Listar voluntários
+router.get(
+    '/',
+    autorizar('administrador', 'colaborador'),
+    listarVoluntarios
+);
+
+// Buscar voluntário específico
+router.get(
+    '/:id',
+    autorizar('administrador', 'colaborador'),
+    buscarVoluntario
+);
+
+// Atualizar voluntário
+router.put(
+    '/:id',
+    autorizar('administrador', 'colaborador'),
+    atualizarVoluntario
+);
+
+// Excluir voluntário (somente administrador)
+router.delete(
+    '/:id',
+    autorizar('administrador'),
+    excluirVoluntario
+);
 
 export default router;

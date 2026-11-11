@@ -1,4 +1,3 @@
-
 const respostaLogin = await fetch('http://localhost:3000/usuarios/login', {
     method: 'POST',
     headers: {

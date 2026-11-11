@@ -1,4 +1,3 @@
-
 import express from 'express';
 
 import {
@@ -13,15 +12,48 @@ import {
     autenticar
 } from '../middlewares/autenticacao.js';
 
+import {
+    autorizar
+} from '../middlewares/autorizacao.js';
+
 const router = express.Router();
 
 // Todas as rotas exigem autenticação
 router.use(autenticar);
 
-router.post('/', cadastrarDoacao);
-router.get('/', listarDoacoes);
-router.get('/:id', buscarDoacao);
-router.put('/:id', atualizarDoacao);
-router.delete('/:id', excluirDoacao);
+// Cadastrar doação
+router.post(
+    '/',
+    autorizar('administrador', 'colaborador'),
+    cadastrarDoacao
+);
+
+// Listar doações
+router.get(
+    '/',
+    autorizar('administrador', 'colaborador'),
+    listarDoacoes
+);
+
+// Buscar doação específica
+router.get(
+    '/:id',
+    autorizar('administrador', 'colaborador'),
+    buscarDoacao
+);
+
+// Atualizar doação
+router.put(
+    '/:id',
+    autorizar('administrador', 'colaborador'),
+    atualizarDoacao
+);
+
+// Excluir doação (somente administrador)
+router.delete(
+    '/:id',
+    autorizar('administrador'),
+    excluirDoacao
+);
 
 export default router;

@@ -1,4 +1,3 @@
-
 import conexao from '../database/conexao.js';
 import bcrypt from 'bcryptjs';
 

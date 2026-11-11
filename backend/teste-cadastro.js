@@ -1,4 +1,3 @@
-
 const resposta = await fetch('http://localhost:3000/instituicoes/cadastro', {
     method: 'POST',
     headers: {

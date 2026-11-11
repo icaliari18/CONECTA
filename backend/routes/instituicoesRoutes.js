@@ -1,4 +1,3 @@
-
 import express from 'express';
 import { cadastrarInstituicao } from '../controllers/instituicoesController.js';
 
