@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conecta | Atendimentos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/atendimentos.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- MENU LATERAL -->
+        <aside class="menu-lateral">
+
+            <div class="marca">
+                <h1>Conecta<span>.</span></h1>
+            </div>
+
+            <p class="titulo-menu">MENU PRINCIPAL</p>
+
+            <nav>
+                <a href="painel.html" class="item-menu">Início</a>
+                <a href="atendimentos.html" class="item-menu ativo">Atendimentos</a>
+                <a href="#" class="item-menu">Doações</a>
+                <a href="#" class="item-menu">Recursos</a>
+                <a href="#" class="item-menu">Voluntários</a>
+                <a href="#" class="item-menu">Eventos</a>
+            </nav>
+
+            <div class="rodape-menu">
+                <p>Conecta — Gestão Social</p>
+            </div>
+
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo">
+
+            <header class="cabecalho">
+
+                <div>
+                    <h2>Atendimentos</h2>
+                    <p>Organize e acompanhe os atendimentos da instituição.</p>
+                </div>
+
+                <div class="perfil">
+                    <div class="avatar">C</div>
+
+                    <div>
+                        <strong id="nome-usuario">Carregando...</strong>
+                        <span id="tipo-usuario">Usuário</span>
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- FORMULÁRIO -->
+            <section class="secao-formulario">
+
+                <div class="titulo-secao">
+                    <h2 id="titulo-formulario">Novo atendimento</h2>
+                    <p>Preencha as informações para registrar um atendimento.</p>
+                </div>
+
+                <form id="form-atendimento">
+
+                    <input type="hidden" id="id-atendimento">
+
+                    <div class="campo">
+                        <label for="nome-atendido">Nome da pessoa atendida</label>
+                        <input
+                            type="text"
+                            id="nome-atendido"
+                            placeholder="Digite o nome"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="tipo-atendimento">Tipo de atendimento</label>
+                        <input
+                            type="text"
+                            id="tipo-atendimento"
+                            placeholder="Ex.: Assistência social"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="descricao">Descrição</label>
+                        <textarea
+                            id="descricao"
+                            placeholder="Descreva as informações do atendimento..."
+                            rows="4"
+                        ></textarea>
+                    </div>
+
+                    <div class="campo" id="campo-status">
+                        <label for="status">Status</label>
+
+                        <select id="status">
+                            <option value="pendente">Pendente</option>
+                            <option value="em andamento">Em andamento</option>
+                            <option value="concluido">Concluído</option>
+                        </select>
+                    </div>
+
+                    <div class="botoes-formulario">
+
+                        <button type="submit" id="botao-salvar">
+                            Cadastrar atendimento
+                        </button>
+
+                        <button type="button" id="botao-cancelar" hidden>
+                            Cancelar edição
+                        </button>
+
+                    </div>
+
+                    <p id="mensagem-atendimento"></p>
+
+                </form>
+
+            </section>
+
+            <!-- LISTAGEM -->
+            <section class="secao-listagem">
+
+                <div class="titulo-secao">
+                    <h2>Atendimentos cadastrados</h2>
+                    <p>Consulte e gerencie os registros da sua instituição.</p>
+                </div>
+
+                <div class="tabela-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Pessoa atendida</th>
+                                <th>Tipo</th>
+                                <th>Data</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="lista-atendimentos">
+
+                            <tr>
+                                <td colspan="5">
+                                    Carregando atendimentos...
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <footer>
+                Conecta © 2026 — Gestão Social com cuidado e conexão.
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="js/atendimentos.js"></script>
+
+</body>
+</html>

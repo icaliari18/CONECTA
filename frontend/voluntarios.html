@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntários | Conecta</title>
+
+    <link rel="stylesheet" href="css/atendimentos.css">
+    <link rel="stylesheet" href="css/voluntarios.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>Conecta</h1>
+                <p>Rede de apoio social</p>
+            </div>
+
+            <nav>
+                <a href="painel.html">Início</a>
+                <a href="atendimentos.html">Atendimentos</a>
+                <a href="doacoes.html">Doações</a>
+                <a href="recursos.html">Recursos</a>
+                <a href="voluntarios.html" class="ativo">Voluntários</a>
+                <a href="eventos.html">Eventos</a>
+            </nav>
+        </aside>
+
+        <main class="conteudo">
+
+            <header class="cabecalho">
+                <div>
+                    <h2>Voluntários</h2>
+                    <p>Organize e acompanhe os voluntários da instituição.</p>
+                </div>
+
+                <div class="perfil">
+                    <div class="avatar"></div>
+                    <div>
+                        <strong id="nome-usuario"></strong>
+                        <span id="tipo-usuario"></span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="secao-formulario">
+
+                <h3 id="titulo-formulario">Novo voluntário</h3>
+
+                <form id="form-voluntario">
+
+                    <input type="hidden" id="id-voluntario">
+
+                    <div class="campo">
+                        <label for="nome">Nome completo</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            placeholder="Nome do voluntário"
+                            required
+                        >
+                    </div>
+
+                    <div class="campos-linha">
+
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="exemplo@email.com"
+                            >
+                        </div>
+
+                        <div class="campo">
+                            <label for="telefone">Telefone</label>
+                            <input
+                                type="tel"
+                                id="telefone"
+                                placeholder="(00) 00000-0000"
+                            >
+                        </div>
+
+                    </div>
+
+                    <div class="campo">
+                        <label for="area-atuacao">Área de atuação</label>
+                        <input
+                            type="text"
+                            id="area-atuacao"
+                            placeholder="Ex.: Educação, saúde, assistência social"
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="disponibilidade">Disponibilidade</label>
+                        <textarea
+                            id="disponibilidade"
+                            placeholder="Ex.: Segundas e quartas, no período da tarde."
+                        ></textarea>
+                    </div>
+
+                    <div id="mensagem-voluntario"></div>
+
+                    <div class="botoes-formulario">
+
+                        <button type="submit" id="botao-salvar">
+                            Cadastrar voluntário
+                        </button>
+
+                        <button
+                            type="button"
+                            id="botao-cancelar"
+                            style="display: none;"
+                        >
+                            Cancelar
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+            <section class="secao-listagem">
+
+                <div class="titulo-listagem">
+                    <h3>Voluntários cadastrados</h3>
+                    <p>Consulte as informações dos voluntários da instituição.</p>
+                </div>
+
+                <div class="tabela-container">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>E-mail</th>
+                                <th>Telefone</th>
+                                <th>Área de atuação</th>
+                                <th>Disponibilidade</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="lista-voluntarios"></tbody>
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/voluntarios.js"></script>
+
+</body>
+</html>

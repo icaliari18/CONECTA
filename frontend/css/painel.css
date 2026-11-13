@@ -1,0 +1,418 @@
+:root {
+    --verde-agua: #A0CED9;
+    --verde: #3D9E71;
+    --verde-escuro: #236C60;
+    --azul: #133968;
+    --laranja: #E1932C;
+    --amarelo: #F0DF87;
+    --creme: #FAF8EF;
+    --branco: #FFFFFF;
+    --texto: #31545A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--creme);
+    color: var(--texto);
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* MENU LATERAL */
+
+.menu-lateral {
+    width: 250px;
+    background-color: var(--branco);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #E6EFEB;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 55px;
+}
+
+.simbolo {
+    width: 42px;
+}
+
+.simbolo svg {
+    width: 100%;
+}
+
+.marca h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 38px;
+    color: var(--azul);
+}
+
+.marca h1 span {
+    color: var(--laranja);
+}
+
+.titulo-menu {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #91A8A2;
+    margin-bottom: 18px;
+}
+
+.menu-lateral nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.item-menu {
+    text-decoration: none;
+    color: var(--texto);
+    padding: 13px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.item-menu:hover,
+.item-menu.ativo {
+    background-color: #E5F3EF;
+    color: var(--verde-escuro);
+}
+
+.rodape-menu {
+    margin-top: auto;
+    padding-top: 25px;
+    font-size: 12px;
+    color: #91A8A2;
+}
+
+/* CONTEÚDO */
+
+.conteudo {
+    flex: 1;
+    padding: 35px 45px;
+    min-width: 0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    gap: 20px;
+}
+
+.cabecalho h2 {
+    color: var(--azul);
+    font-size: 23px;
+}
+
+.cabecalho p {
+    color: #829594;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background-color: var(--verde-agua);
+    color: var(--azul);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.perfil strong,
+.perfil span {
+    display: block;
+}
+
+.perfil strong {
+    font-size: 13px;
+    color: var(--azul);
+}
+
+.perfil span {
+    font-size: 11px;
+    color: #829594;
+    margin-top: 3px;
+}
+
+/* BOAS-VINDAS */
+
+.boas-vindas {
+    padding: 35px;
+    border-radius: 20px;
+    background: linear-gradient(120deg, #DDF0E9, #B8DFD8, #A0CED9);
+    margin-bottom: 38px;
+}
+
+.etiqueta {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--verde-escuro);
+}
+
+.boas-vindas h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 38px;
+    color: var(--azul);
+    margin: 12px 0;
+}
+
+.boas-vindas h2 span {
+    color: var(--laranja);
+}
+
+.boas-vindas p {
+    font-size: 14px;
+    color: var(--texto);
+}
+
+/* TÍTULOS DAS SEÇÕES */
+
+.titulo-secao {
+    margin-bottom: 20px;
+}
+
+.titulo-secao h2 {
+    font-size: 19px;
+    color: var(--azul);
+}
+
+.titulo-secao p {
+    color: #829594;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* CARDS DE RESUMO */
+
+.cards-resumo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+    gap: 15px;
+}
+
+.card-resumo {
+    background-color: var(--branco);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #E8EFEC;
+    transition: 0.3s;
+}
+
+.card-resumo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(35, 108, 96, 0.08);
+}
+
+.icone-card {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.atendimento {
+    background-color: #E1F1EC;
+    color: var(--verde);
+}
+
+.doacao {
+    background-color: #FFF1DB;
+    color: var(--laranja);
+}
+
+.recurso {
+    background-color: #E4F1F4;
+    color: var(--azul);
+}
+
+.voluntario {
+    background-color: #F5EEC9;
+    color: #927C2D;
+}
+
+.evento {
+    background-color: #E9E8F5;
+    color: #7166A5;
+}
+
+.card-resumo p {
+    font-size: 13px;
+    color: var(--texto);
+    font-weight: 700;
+}
+
+.card-resumo strong {
+    display: block;
+    font-size: 28px;
+    color: var(--azul);
+    margin: 7px 0;
+}
+
+.card-resumo > span {
+    font-size: 11px;
+    color: #91A8A2;
+}
+
+/* ÁREAS DE ACESSO */
+
+.secao-acoes {
+    margin-top: 40px;
+}
+
+.acoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 15px;
+}
+
+.acao {
+    padding: 23px;
+    background-color: var(--branco);
+    border: 1px solid #E8EFEC;
+    border-radius: 15px;
+}
+
+.acao h3 {
+    color: var(--verde-escuro);
+    font-size: 16px;
+    margin-bottom: 9px;
+}
+
+.acao p {
+    font-size: 13px;
+    color: #829594;
+    line-height: 1.6;
+    min-height: 42px;
+}
+
+.acao a {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--verde);
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.acao a:hover {
+    color: var(--laranja);
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    margin-top: 45px;
+    padding: 20px;
+    color: #91A8A2;
+    font-size: 12px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+    .menu-lateral {
+        width: 190px;
+    }
+
+    .conteudo {
+        padding: 25px;
+    }
+
+    .boas-vindas h2 {
+        font-size: 31px;
+    }
+}
+
+@media (max-width: 600px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .menu-lateral {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .marca {
+        margin-bottom: 20px;
+    }
+
+    .menu-lateral nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .item-menu {
+        padding: 9px;
+        font-size: 12px;
+    }
+
+    .titulo-menu,
+    .rodape-menu {
+        display: none;
+    }
+
+    .conteudo {
+        padding: 20px;
+    }
+
+    .cabecalho {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .boas-vindas {
+        padding: 25px;
+    }
+}
+/* BOT�O SAIR */
+.botao-sair {
+    margin-left: 12px;
+    background-color: transparent;
+    color: #c94a4a;
+    border: 1px solid #c94a4a;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.botao-sair:hover {
+    background-color: #c94a4a;
+    color: #ffffff;
+}

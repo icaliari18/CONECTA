@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="css/atendimentos.css">
+    <link rel="stylesheet" href="css/doacoes.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conecta | Doações</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/doacoes.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- MENU LATERAL -->
+        <aside class="menu-lateral">
+
+            <div class="marca">
+                <h1>Conecta<span>.</span></h1>
+            </div>
+
+            <p class="titulo-menu">MENU PRINCIPAL</p>
+
+            <nav>
+                <a href="painel.html" class="item-menu">Início</a>
+                <a href="atendimentos.html" class="item-menu">Atendimentos</a>
+                <a href="doacoes.html" class="item-menu ativo">Doações</a>
+                <a href="recursos.html" class="item-menu">Recursos</a>
+                <a href="voluntarios.html" class="item-menu">Voluntários</a>
+                <a href="eventos.html" class="item-menu">Eventos</a>
+            </nav>
+
+            <div class="rodape-menu">
+                <p>Conecta — Gestão Social</p>
+            </div>
+
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo">
+
+            <header class="cabecalho">
+
+                <div>
+                    <h2>Doações</h2>
+                    <p>Organize e acompanhe as doações recebidas pela instituição.</p>
+                </div>
+
+                <div class="perfil">
+                    <div class="avatar">C</div>
+
+                    <div>
+                        <strong id="nome-usuario">Carregando...</strong>
+                        <span id="tipo-usuario">Usuário</span>
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- FORMULÁRIO -->
+            <section class="secao-formulario">
+
+                <div class="titulo-secao">
+                    <h2 id="titulo-formulario">Nova doação</h2>
+                    <p>Preencha as informações para registrar uma doação.</p>
+                </div>
+
+                <form id="form-doacao">
+
+                    <input type="hidden" id="id-doacao">
+
+                    <div class="campo">
+                        <label for="nome-doador">Nome do doador</label>
+                        <input
+                            type="text"
+                            id="nome-doador"
+                            placeholder="Digite o nome do doador"
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="tipo-doacao">Tipo de doação</label>
+                        <input
+                            type="text"
+                            id="tipo-doacao"
+                            placeholder="Ex.: Alimentos, roupas, materiais..."
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="descricao">Descrição</label>
+                        <textarea
+                            id="descricao"
+                            placeholder="Descreva os itens recebidos..."
+                            rows="3"
+                        ></textarea>
+                    </div>
+
+                    <div class="campo">
+                        <label for="quantidade">Quantidade</label>
+                        <input
+                            type="number"
+                            id="quantidade"
+                            placeholder="Digite a quantidade"
+                            min="0.01"
+                            step="0.01"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="data-recebimento">Data de recebimento</label>
+                        <input
+                            type="date"
+                            id="data-recebimento"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="observacoes">Observações</label>
+                        <textarea
+                            id="observacoes"
+                            placeholder="Informações adicionais sobre a doação..."
+                            rows="3"
+                        ></textarea>
+                    </div>
+
+                    <div class="botoes-formulario">
+
+                        <button type="submit" id="botao-salvar">
+                            Cadastrar doação
+                        </button>
+
+                        <button type="button" id="botao-cancelar" hidden>
+                            Cancelar edição
+                        </button>
+
+                    </div>
+
+                    <p id="mensagem-doacao"></p>
+
+                </form>
+
+            </section>
+
+            <!-- LISTAGEM -->
+            <section class="secao-listagem">
+
+                <div class="titulo-secao">
+                    <h2>Doações cadastradas</h2>
+                    <p>Consulte e gerencie as doações da sua instituição.</p>
+                </div>
+
+                <div class="tabela-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Doador</th>
+                                <th>Tipo de doação</th>
+                                <th>Quantidade</th>
+                                <th>Data de recebimento</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="lista-doacoes">
+
+                            <tr>
+                                <td colspan="5">
+                                    Carregando doações...
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <footer>
+                Conecta © 2026 — Gestão Social com cuidado e conexão.
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="js/doacoes.js"></script>
+
+</body>
+</html>

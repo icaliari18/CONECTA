@@ -169,3 +169,31 @@ ApÃ³s a inicializaÃ§Ã£o, a API estarÃ¡ disponÃ­vel em `http://localhost:3000`.
 O projeto utiliza arquivos separados para organizar as rotas, os controladores, os middlewares e a conexÃ£o com o banco de dados.
 
 O arquivo `.env` contÃ©m configuraÃ§Ãµes privadas e nÃ£o deve ser publicado no GitHub. A pasta `node_modules` tambÃ©m nÃ£o precisa ser enviada ao repositÃ³rio, pois as dependÃªncias podem ser instaladas por meio do `package.json`.
+
+## PARTE/ENTREGA 3 — CRUD Completo e Integração Front-end/Back-end
+
+Nesta etapa foi desenvolvido o CRUD completo da entidade principal do sistema (**Atendimentos**), integrando o banco de dados MySQL, a API REST em Node.js/Express e a interface web responsiva com HTML, CSS e JavaScript moderno.
+
+### 16. CRUD da Entidade Principal (Atendimentos)
+
+A entidade de atendimentos contempla todas as operações fundamentais exigidas:
+- **POST `/atendimentos`**: Cadastra um novo atendimento vinculado à instituição do usuário autenticado.
+- **GET `/atendimentos`**: Lista todos os atendimentos da instituição do usuário logado.
+- **GET `/atendimentos/:id`**: Consulta detalhes de um atendimento específico pertencente à instituição.
+- **PUT `/atendimentos/:id`**: Atualiza as informações e o status do atendimento (`pendente`, `em andamento`, `concluido`).
+- **DELETE `/atendimentos/:id`**: Exclui um atendimento da instituição (operação restrita a administradores).
+
+### 17. Permissões e Regras de Negócio
+
+- **Verificação dupla de permissão (Back-end e Front-end):**
+  - **No Back-end:** As rotas possuem o middleware `autenticar` (validação de JWT) e `autorizar(perfis)`. A rota de exclusão (`DELETE /atendimentos/:id`) exige estritamente o perfil `administrador`. Se um colaborador tentar disparar a requisição de exclusão, a API bloqueia retornando status `403 Proibido`.
+  - **No Front-end:** O botão "Excluir" só é renderizado na tabela para usuários autenticados com perfil `administrador`.
+- **Isolamento multi-inquilino:** Todas as consultas, alterações e exclusões filtram obrigatoriamente pelo `instituicao_id` extraído do token JWT, assegurando que nenhuma instituição acerte ou visualize registros alheios.
+- **Validações de dados:** O back-end valida campos obrigatórios (`nome_atendido`, `tipo_atendimento`) e restringe os valores aceitos para o campo `status`.
+
+### 18. Interface e Integração com Fetch API
+
+- **Manipulação do DOM:** Atualização dinâmica da tabela de atendimentos, formulário com alternância entre os modos "Novo atendimento" e "Editar atendimento" com preenchimento automático.
+- **Fetch API:** Comunicação assíncrona com envio de cabeçalho `Authorization: Bearer <token>` em todas as requisições protegidas.
+- **Segurança na exibição:** Sanitização e escape de caracteres HTML para prevenir injeções de script (XSS).
+- **Controle de sessão:** Redirecionamento automático para a tela de login caso o token não esteja presente ou seja inválido, além de botão de encerramento de sessão (*Logout*).

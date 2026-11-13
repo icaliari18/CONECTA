@@ -5,7 +5,7 @@ const respostaLogin = await fetch('http://localhost:3000/usuarios/login', {
     },
     body: JSON.stringify({
         email: 'admin.teste@example.com',
-        senha: 'Teste1234!'
+        senha: 'Admin123!'
     })
 });
 

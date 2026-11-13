@@ -1,0 +1,327 @@
+:root {
+    --verde-agua: #A0CED9;
+    --verde: #3D9E71;
+    --verde-escuro: #236C60;
+    --azul: #133968;
+    --laranja: #E1932C;
+    --amarelo: #F0DF87;
+    --creme: #FAF8EF;
+    --branco: #FFFFFF;
+    --texto: #31545A;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--creme);
+    color: var(--texto);
+    min-height: 100vh;
+}
+
+.pagina-login {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    width: 52%;
+    padding: 65px;
+    background: linear-gradient(
+        145deg,
+        #E6F3EF,
+        #C5E5DF,
+        #A0CED9
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.apresentacao::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    bottom: -170px;
+    left: -130px;
+}
+
+.apresentacao::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(61, 158, 113, 0.10);
+    border-radius: 50%;
+    top: -130px;
+    right: -100px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.simbolo {
+    width: 100px;
+    flex-shrink: 0;
+}
+
+.simbolo svg {
+    width: 100%;
+}
+
+.marca h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--azul);
+    line-height: 1;
+}
+
+.marca h1 span {
+    color: var(--laranja);
+}
+
+.marca p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--verde-escuro);
+}
+
+.mensagem {
+    max-width: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+.mensagem h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 54px;
+    line-height: 1.05;
+    font-weight: 600;
+    color: var(--azul);
+    margin-bottom: 20px;
+}
+
+.mensagem p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--texto);
+}
+
+.ilustracao {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ilustracao span {
+    font-size: 45px;
+    color: var(--verde);
+}
+
+.ilustracao p {
+    font-size: 13px;
+    color: var(--verde-escuro);
+}
+
+/* FORMULÁRIO */
+
+.area-formulario {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: var(--creme);
+}
+
+.form-login {
+    width: 100%;
+    max-width: 440px;
+    padding: 45px;
+    background-color: var(--branco);
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(35, 108, 96, 0.09);
+}
+
+.titulo-formulario {
+    margin-bottom: 35px;
+}
+
+.titulo-formulario h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--verde-escuro);
+    margin-bottom: 8px;
+}
+
+.titulo-formulario p {
+    font-size: 14px;
+    color: #829594;
+}
+
+/* CAMPOS */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--verde-escuro);
+    margin-bottom: 9px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #D7E6E1;
+    border-radius: 12px;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    background-color: #FCFEFD;
+    transition: 0.3s;
+}
+
+.campo input:focus {
+    border-color: var(--verde);
+    box-shadow: 0 0 0 4px rgba(61, 158, 113, 0.12);
+}
+
+/* BOTÃO */
+
+.form-login button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--verde);
+    color: var(--branco);
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-login button span {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+.form-login button:hover {
+    background-color: var(--verde-escuro);
+    transform: translateY(-2px);
+}
+
+.form-login button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* MENSAGENS */
+
+#mensagem-login {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* CADASTRO */
+
+.cadastro {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #829594;
+}
+
+.cadastro a {
+    color: var(--verde);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.cadastro a:hover {
+    color: var(--laranja);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+    .pagina-login {
+        flex-direction: column;
+    }
+
+    .apresentacao,
+    .area-formulario {
+        width: 100%;
+    }
+
+    .apresentacao {
+        min-height: 400px;
+        padding: 35px;
+    }
+
+    .marca h1 {
+        font-size: 48px;
+    }
+
+    .mensagem {
+        margin: 45px 0;
+    }
+
+    .mensagem h2 {
+        font-size: 43px;
+    }
+
+    .area-formulario {
+        padding: 35px 20px;
+    }
+
+    .form-login {
+        padding: 30px 24px;
+    }
+}
+
+/* MENSAGENS DE LOGIN */
+#mensagem-login {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.mensagem-sucesso {
+    color: #3D9E71;
+}
+
+.mensagem-erro {
+    color: #C0392B;
+}

@@ -1,0 +1,27 @@
+/* ESTILIZAÇÃO ESPECÍFICA DE DOAÇÕES */
+
+#form-doacao {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#mensagem-doacao {
+    display: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#mensagem-doacao.sucesso {
+    display: block;
+    background: #E1F1EC;
+    color: #32845E;
+}
+
+#mensagem-doacao.erro {
+    display: block;
+    background: #FBEAEA;
+    color: #C0392B;
+}

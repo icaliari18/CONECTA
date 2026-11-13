@@ -1,0 +1,58 @@
+/* FORMULÁRIO DE EVENTOS */
+
+#form-evento {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#mensagem-evento {
+    display: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#mensagem-evento.sucesso {
+    display: block;
+    background: #E1F1EC;
+    color: #32845E;
+}
+
+#mensagem-evento.erro {
+    display: block;
+    background: #FBEAEA;
+    color: #C0392B;
+}
+
+/* STATUS DOS EVENTOS */
+
+.status-evento {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.status-planejado {
+    background: #FFF3D6;
+    color: #A87519;
+}
+
+.status-confirmado {
+    background: #E1F0F5;
+    color: #397A91;
+}
+
+.status-realizado {
+    background: #E1F1EC;
+    color: #32845E;
+}
+
+.status-cancelado {
+    background: #FBEAEA;
+    color: #C0392B;
+}

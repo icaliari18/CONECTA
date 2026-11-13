@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conecta | Cadastro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<body>
+
+    <main class="pagina-login">
+
+        <section class="apresentacao">
+
+            <div class="marca">
+
+                <div class="simbolo">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="20" r="9" fill="#A0CED9"/>
+                        <circle cx="25" cy="34" r="9" fill="#3D9E71"/>
+                        <circle cx="75" cy="34" r="9" fill="#E1932C"/>
+
+                        <path d="M50 36 C38 24 23 39 30 51 L50 72 L70 51 C77 39 62 24 50 36Z"
+                            fill="none" stroke="#3D9E71" stroke-width="5"
+                            stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <div>
+                    <h1>Conecta<span>.</span></h1>
+                    <p>Organizando o cuidado, fortalecendo conexões.</p>
+                </div>
+
+            </div>
+
+            <div class="mensagem">
+                <h2>Faça parte dessa rede de apoio.</h2>
+
+                <p>
+                    Cadastre sua instituição e comece a organizar
+                    suas atividades, recursos e ações sociais em um só lugar.
+                </p>
+            </div>
+
+            <div class="ilustracao">
+                <span>♡</span>
+                <p>Conecta — Gestão Social</p>
+            </div>
+
+        </section>
+
+        <section class="area-formulario area-cadastro">
+
+            <form id="form-cadastro" class="form-login form-cadastro">
+
+                <div class="titulo-formulario">
+                    <h2>Cadastre sua instituição!</h2>
+                    <p>Preencha os dados para começar a utilizar o Conecta.</p>
+                </div>
+
+                <h3 class="subtitulo-cadastro">Dados da instituição</h3>
+
+                <div class="campo">
+                    <label for="nome-instituicao">Nome da instituição *</label>
+                    <input type="text" id="nome-instituicao" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email-instituicao">E-mail da instituição *</label>
+                    <input type="email" id="email-instituicao" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone">
+                </div>
+
+                <div class="campo">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade">
+                </div>
+
+                <div class="campo">
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" maxlength="2" placeholder="Ex.: RS">
+                </div>
+
+                <h3 class="subtitulo-cadastro">Dados do administrador</h3>
+
+                <div class="campo">
+                    <label for="nome-administrador">Nome completo *</label>
+                    <input type="text" id="nome-administrador" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email-administrador">E-mail do administrador *</label>
+                    <input type="email" id="email-administrador" required>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha *</label>
+                    <input type="password" id="senha" minlength="8" required>
+                    <small>A senha deve ter pelo menos 8 caracteres.</small>
+                </div>
+
+                <div class="campo">
+                    <label for="confirmar-senha">Confirmar senha *</label>
+                    <input type="password" id="confirmar-senha" minlength="8" required>
+                </div>
+
+                <button type="submit" id="botao-cadastro">
+                    Cadastrar instituição <span>→</span>
+                </button>
+
+                <p id="mensagem-cadastro"></p>
+
+                <div class="cadastro">
+                    Já possui uma conta?
+                    <a href="index.html">Voltar para o login</a>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="js/cadastro.js"></script>
+
+</body>
+</html>

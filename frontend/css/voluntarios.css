@@ -1,0 +1,27 @@
+/* FORMULÁRIO DE VOLUNTÁRIOS */
+
+#form-voluntario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#mensagem-voluntario {
+    display: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#mensagem-voluntario.sucesso {
+    display: block;
+    background: #E1F1EC;
+    color: #32845E;
+}
+
+#mensagem-voluntario.erro {
+    display: block;
+    background: #FBEAEA;
+    color: #C0392B;
+}

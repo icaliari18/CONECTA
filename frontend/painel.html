@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conecta | Painel Principal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/painel.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- MENU LATERAL -->
+        <aside class="menu-lateral">
+
+            <div class="marca">
+                <div class="simbolo">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="20" r="9" fill="#A0CED9"/>
+                        <circle cx="25" cy="34" r="9" fill="#3D9E71"/>
+                        <circle cx="75" cy="34" r="9" fill="#E1932C"/>
+
+                        <path d="M50 36 C38 24 23 39 30 51 L50 72 L70 51 C77 39 62 24 50 36Z"
+                            fill="none" stroke="#3D9E71" stroke-width="5"
+                            stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <h1>Conecta<span>.</span></h1>
+            </div>
+
+            <p class="titulo-menu">MENU PRINCIPAL</p>
+
+            <nav>
+            <a href="painel.html" class="item-menu ativo">Início</a>
+            <a href="atendimentos.html" class="item-menu">Atendimentos</a>
+            <a href="doacoes.html" class="item-menu">Doações</a>
+            <a href="recursos.html" class="item-menu">Recursos</a>
+            <a href="voluntarios.html" class="item-menu">Voluntários</a>
+            <a href="eventos.html" class="item-menu">Eventos</a>
+            </nav>
+
+            <div class="rodape-menu">
+                <p>Conecta — Gestão Social</p>
+            </div>
+
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo">
+
+            <header class="cabecalho">
+                <div>
+                    <h2>Seu espaço de gestão</h2>
+                    <p>Organize suas atividades e acompanhe suas ações.</p>
+                </div>
+
+                <div class="perfil">
+                    <div class="avatar">C</div>
+                    <div>
+                        <strong id="nome-usuario">Carregando...</strong>
+                        <span id="tipo-usuario">Usuário</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="boas-vindas">
+                <div>
+                    <span class="etiqueta">BEM-VINDO AO CONECTA</span>
+                    <h2>Pequenas ações, grandes transformações. <span>♡</span></h2>
+                    <p>
+                        Aqui você acompanha e organiza tudo o que acontece
+                        na sua instituição.
+                    </p>
+                </div>
+            </section>
+
+            <section class="secao-resumo">
+
+                <div class="titulo-secao">
+                    <h2>Visão geral</h2>
+                    <p>Resumo das atividades da instituição.</p>
+                </div>
+
+                <div class="cards-resumo">
+
+                    <article class="card-resumo">
+                        <div class="icone-card atendimento">♡</div>
+                        <p>Atendimentos</p>
+                        <strong id="total-atendimentos">—</strong>
+                        <span>Registros cadastrados</span>
+                    </article>
+
+                    <article class="card-resumo">
+                        <div class="icone-card doacao">✿</div>
+                        <p>Doações</p>
+                        <strong id="total-doacoes">—</strong>
+                        <span>Registros cadastrados</span>
+                    </article>
+
+                    <article class="card-resumo">
+                        <div class="icone-card recurso">◇</div>
+                        <p>Recursos</p>
+                        <strong id="total-recursos">—</strong>
+                        <span>Itens cadastrados</span>
+                    </article>
+
+                    <article class="card-resumo">
+                        <div class="icone-card voluntario">♧</div>
+                        <p>Voluntários</p>
+                        <strong id="total-voluntarios">—</strong>
+                        <span>Pessoas cadastradas</span>
+                    </article>
+
+                    <article class="card-resumo">
+                        <div class="icone-card evento">☆</div>
+                        <p>Eventos</p>
+                        <strong id="total-eventos">—</strong>
+                        <span>Eventos cadastrados</span>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="secao-acoes">
+
+                <div class="titulo-secao">
+                    <h2>Organize sua instituição</h2>
+                    <p>Escolha uma área para começar.</p>
+                </div>
+
+                <div class="acoes">
+
+                    <div class="acao">
+                        <h3>Atendimentos</h3>
+                        <p>Organize e acompanhe os atendimentos realizados.</p>
+                        <a href="atendimentos.html">Acessar área →</a>
+                    </div>
+
+                    <div class="acao">
+                        <h3>Doações</h3>
+                        <p>Controle as doações recebidas pela instituição.</p>
+                        <a href="doacoes.html">Acessar área →</a>
+                    </div>
+
+                    <div class="acao">
+                        <h3>Recursos</h3>
+                        <p>Acompanhe os materiais e recursos disponíveis.</p>
+                        <a href="recursos.html">Acessar área →</a>
+                    </div>
+
+                    <div class="acao">
+                        <h3>Voluntários</h3>
+                        <p>Organize as informações dos voluntários.</p>
+                        <a href="voluntarios.html">Acessar área →</a>
+                    </div>
+
+                    <div class="acao">
+                        <h3>Eventos</h3>
+                        <p>Planeje e acompanhe os eventos da instituição.</p>
+                        <a href="eventos.html">Acessar área →</a>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <footer>
+                Conecta © 2026 — Gestão Social com cuidado e conexão.
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="js/painel.js"></script>
+
+</body>
+</html>

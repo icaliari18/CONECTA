@@ -1,0 +1,48 @@
+/* FORMULÁRIO DE RECURSOS */
+
+#form-recurso {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#mensagem-recursos {
+    display: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#mensagem-recursos.sucesso {
+    display: block;
+    background: #E1F1EC;
+    color: #32845E;
+}
+
+#mensagem-recursos.erro {
+    display: block;
+    background: #FBEAEA;
+    color: #C0392B;
+}
+
+/* SITUAÇÃO DO ESTOQUE */
+
+.situacao-estoque {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.estoque-normal {
+    background: #E1F1EC;
+    color: #32845E;
+}
+
+.estoque-baixo {
+    background: #FFF3D6;
+    color: #A87519;
+}
