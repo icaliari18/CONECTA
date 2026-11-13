@@ -269,3 +269,13 @@ botaoCancelar.addEventListener('click', limparFormulario);
 
 // CARREGAR A LISTA AO ABRIR A PÁGINA
 carregarDoacoes();
+
+// LOGOUT
+const botaoSair = document.getElementById('botao-sair');
+if (botaoSair) {
+    botaoSair.addEventListener('click', () => {
+        sessionStorage.removeItem('token');
+        sessionStorage.removeItem('usuario');
+        window.location.href = 'index.html';
+    });
+}

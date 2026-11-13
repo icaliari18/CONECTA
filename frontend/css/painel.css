@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --verde-agua: #A0CED9;
     --verde: #3D9E71;
     --verde-escuro: #236C60;
@@ -100,7 +100,7 @@ body {
     color: #91A8A2;
 }
 
-/* CONTEÚDO */
+/* CONTE├ÜDO */
 
 .conteudo {
     flex: 1;
@@ -193,7 +193,7 @@ body {
     color: var(--texto);
 }
 
-/* TÍTULOS DAS SEÇÕES */
+/* T├ìTULOS DAS SE├ç├òES */
 
 .titulo-secao {
     margin-bottom: 20px;
@@ -285,7 +285,7 @@ body {
     color: #91A8A2;
 }
 
-/* ÁREAS DE ACESSO */
+/* ├üREAS DE ACESSO */
 
 .secao-acoes {
     margin-top: 40px;
@@ -330,7 +330,7 @@ body {
     color: var(--laranja);
 }
 
-/* RODAPÉ */
+/* RODAP├ë */
 
 footer {
     text-align: center;
@@ -398,7 +398,7 @@ footer {
         padding: 25px;
     }
 }
-/* BOT�O SAIR */
+/* BOT├O SAIR */
 .botao-sair {
     margin-left: 12px;
     background-color: transparent;

@@ -1,53 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voluntários | Conecta</title>
+
+    <title>Conecta | Voluntários</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/atendimentos.css">
     <link rel="stylesheet" href="css/voluntarios.css">
 </head>
+
 <body>
 
-    <div class="container">
+    <div class="layout">
 
-        <aside class="sidebar">
-            <div class="logo">
-                <h1>Conecta</h1>
-                <p>Rede de apoio social</p>
+        <!-- MENU LATERAL -->
+        <aside class="menu-lateral">
+
+            <div class="marca">
+                <h1>Conecta<span>.</span></h1>
             </div>
 
+            <p class="titulo-menu">MENU PRINCIPAL</p>
+
             <nav>
-                <a href="painel.html">Início</a>
-                <a href="atendimentos.html">Atendimentos</a>
-                <a href="doacoes.html">Doações</a>
-                <a href="recursos.html">Recursos</a>
-                <a href="voluntarios.html" class="ativo">Voluntários</a>
-                <a href="eventos.html">Eventos</a>
+                <a href="painel.html" class="item-menu">Início</a>
+                <a href="atendimentos.html" class="item-menu">Atendimentos</a>
+                <a href="doacoes.html" class="item-menu">Doações</a>
+                <a href="recursos.html" class="item-menu">Recursos</a>
+                <a href="voluntarios.html" class="item-menu ativo">Voluntários</a>
+                <a href="eventos.html" class="item-menu">Eventos</a>
             </nav>
+
+            <div class="rodape-menu">
+                <p>Conecta — Gestão Social</p>
+            </div>
+
         </aside>
 
+        <!-- CONTEÚDO PRINCIPAL -->
         <main class="conteudo">
 
             <header class="cabecalho">
+
                 <div>
                     <h2>Voluntários</h2>
                     <p>Organize e acompanhe os voluntários da instituição.</p>
                 </div>
 
                 <div class="perfil">
-                    <div class="avatar"></div>
+                    <div class="avatar">C</div>
+
                     <div>
-                        <strong id="nome-usuario"></strong>
-                        <span id="tipo-usuario"></span>
+                        <strong id="nome-usuario">Carregando...</strong>
+                        <span id="tipo-usuario">Usuário</span>
                     </div>
+
+                    <button type="button" id="botao-sair" class="botao-sair" title="Sair da conta">Sair</button>
                 </div>
+
             </header>
 
+            <!-- FORMULÁRIO -->
             <section class="secao-formulario">
 
-                <h3 id="titulo-formulario">Novo voluntário</h3>
+                <div class="titulo-secao">
+                    <h2 id="titulo-formulario">Novo voluntário</h2>
+                    <p>Preencha as informações para registrar um voluntário.</p>
+                </div>
 
                 <form id="form-voluntario">
 
@@ -63,26 +88,22 @@
                         >
                     </div>
 
-                    <div class="campos-linha">
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="exemplo@email.com"
+                        >
+                    </div>
 
-                        <div class="campo">
-                            <label for="email">E-mail</label>
-                            <input
-                                type="email"
-                                id="email"
-                                placeholder="exemplo@email.com"
-                            >
-                        </div>
-
-                        <div class="campo">
-                            <label for="telefone">Telefone</label>
-                            <input
-                                type="tel"
-                                id="telefone"
-                                placeholder="(00) 00000-0000"
-                            >
-                        </div>
-
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input
+                            type="tel"
+                            id="telefone"
+                            placeholder="(00) 00000-0000"
+                        >
                     </div>
 
                     <div class="campo">
@@ -99,10 +120,9 @@
                         <textarea
                             id="disponibilidade"
                             placeholder="Ex.: Segundas e quartas, no período da tarde."
+                            rows="3"
                         ></textarea>
                     </div>
-
-                    <div id="mensagem-voluntario"></div>
 
                     <div class="botoes-formulario">
 
@@ -120,14 +140,17 @@
 
                     </div>
 
+                    <div id="mensagem-voluntario"></div>
+
                 </form>
 
             </section>
 
+            <!-- LISTAGEM -->
             <section class="secao-listagem">
 
-                <div class="titulo-listagem">
-                    <h3>Voluntários cadastrados</h3>
+                <div class="titulo-secao">
+                    <h2>Voluntários cadastrados</h2>
                     <p>Consulte as informações dos voluntários da instituição.</p>
                 </div>
 
@@ -145,12 +168,20 @@
                             </tr>
                         </thead>
 
-                        <tbody id="lista-voluntarios"></tbody>
+                        <tbody id="lista-voluntarios">
+                            <tr>
+                                <td colspan="6">Carregando voluntários...</td>
+                            </tr>
+                        </tbody>
                     </table>
 
                 </div>
 
             </section>
+
+            <footer>
+                Conecta © 2026 — Gestão Social com cuidado e conexão.
+            </footer>
 
         </main>
 

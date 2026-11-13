@@ -1,4 +1,4 @@
-/* CONFIGURAÇÕES GERAIS */
+﻿/* CONFIGURA├ç├òES GERAIS */
 * {
     margin: 0;
     padding: 0;
@@ -73,7 +73,7 @@ body {
     font-size: 12px;
 }
 
-/* CONTEÚDO PRINCIPAL */
+/* CONTE├ÜDO PRINCIPAL */
 .conteudo {
     flex: 1;
     padding: 40px;
@@ -133,7 +133,7 @@ body {
     margin-top: 3px;
 }
 
-/* SEÇÕES */
+/* SE├ç├òES */
 .secao-formulario,
 .secao-listagem {
     background-color: #FFFFFF;
@@ -152,7 +152,7 @@ body {
     margin-bottom: 5px;
 }
 
-/* FORMULÁRIO */
+/* FORMUL├üRIO */
 #form-atendimento {
     display: flex;
     flex-direction: column;
@@ -279,7 +279,7 @@ tbody tr:hover {
     background-color: #FAFCFA;
 }
 
-/* RODAPÉ */
+/* RODAP├ë */
 footer {
     text-align: center;
     color: #91A9A9;
@@ -338,7 +338,7 @@ footer {
     }
 }
 
-/* BOT�O SAIR */
+/* BOT├O SAIR */
 .botao-sair {
     margin-left: 12px;
     background-color: transparent;
