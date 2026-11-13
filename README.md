@@ -1,174 +1,174 @@
 # Conecta
 
-## 1. Descri├º├úo do projeto
-O Conecta ├® um sistema web desenvolvido para auxiliar institui├º├Áes sociais na organiza├º├úo e no gerenciamento de suas atividades. A plataforma centraliza informa├º├Áes sobre atendimentos, doa├º├Áes, recursos, volunt├írios, eventos e campanhas, facilitando o controle das a├º├Áes realizadas.
+## 1. Descrição do projeto
+O Conecta é um sistema web desenvolvido para auxiliar instituições sociais na organização e no gerenciamento de suas atividades. A plataforma centraliza informações sobre atendimentos, doações, recursos, voluntários, eventos e campanhas, facilitando o controle das ações realizadas.
 
-O sistema ser├í destinado a diferentes tipos de institui├º├Áes sociais. Cada uma poder├í realizar seu pr├│prio cadastro na plataforma, criar a conta de seu primeiro administrador e cadastrar colaboradores para auxiliar na gest├úo de suas atividades.
+O sistema será destinado a diferentes tipos de instituições sociais. Cada uma poderá realizar seu próprio cadastro na plataforma, criar a conta de seu primeiro administrador e cadastrar colaboradores para auxiliar na gestão de suas atividades.
 
-As institui├º├Áes compartilhar├úo a mesma plataforma, mas ter├úo seus pr├│prios usu├írios e registros, com controle de acesso para impedir que uma institui├º├úo visualize ou altere as informa├º├Áes de outra.
+As instituições compartilharão a mesma plataforma, mas terão seus próprios usuários e registros, com controle de acesso para impedir que uma instituição visualize ou altere as informações de outra.
 
 ## 2. Problema identificado
-Institui├º├Áes sociais precisam organizar diversas atividades, como atendimentos, recebimento e distribui├º├úo de doa├º├Áes, controle de recursos, organiza├º├úo de volunt├írios e realiza├º├úo de eventos.
+Instituições sociais precisam organizar diversas atividades, como atendimentos, recebimento e distribuição de doações, controle de recursos, organização de voluntários e realização de eventos.
 
-Quando essas informa├º├Áes ficam distribu├¡das entre diferentes pessoas, pastas etc pode ser mais dif├¡cil acompanhar solicita├º├Áes, consultar registros, controlar recursos dispon├¡veis e manter as atividades organizadas.
+Quando essas informações ficam distribuídas entre diferentes pessoas, pastas etc pode ser mais difícil acompanhar solicitações, consultar registros, controlar recursos disponíveis e manter as atividades organizadas.
 
-Diante desse cen├írio, o Conecta prop├Áe uma solu├º├úo digital para centralizar as informa├º├Áes e facilitar a gest├úo das atividades institucionais.
+Diante desse cenário, o Conecta propõe uma solução digital para centralizar as informações e facilitar a gestão das atividades institucionais.
 
-## 3. P├║blico-alvo
-O sistema ser├í destinado a institui├º├Áes sociais de diferentes tipos, como organiza├º├Áes n├úo governamentais (ONGs), associa├º├Áes, projetos comunit├írios e outras organiza├º├Áes que realizam atividades de apoio social.
+## 3. Público-alvo
+O sistema será destinado a instituições sociais de diferentes tipos, como organizações não governamentais (ONGs), associações, projetos comunitários e outras organizações que realizam atividades de apoio social.
 
-Os usu├írios da plataforma ser├úo administradores e colaboradores respons├íveis pela organiza├º├úo e execu├º├úo das atividades de cada institui├º├úo.
+Os usuários da plataforma serão administradores e colaboradores responsáveis pela organização e execução das atividades de cada instituição.
 
 ## 4. Objetivo geral
 
-Desenvolver um sistema web que facilite a organiza├º├úo e o gerenciamento das atividades de institui├º├Áes sociais, centralizando informa├º├Áes e auxiliando no acompanhamento dos atendimentos, doa├º├Áes, recursos, volunt├írios e eventos.
+Desenvolver um sistema web que facilite a organização e o gerenciamento das atividades de instituições sociais, centralizando informações e auxiliando no acompanhamento dos atendimentos, doações, recursos, voluntários e eventos.
 
-## 5. Objetivos espec├¡ficos
+## 5. Objetivos específicos
 
-- Centralizar as informa├º├Áes de cada institui├º├úo em um ├║nico sistema.
-- Permitir que diferentes institui├º├Áes se cadastrem e utilizem a plataforma de forma independente.
-- Facilitar o registro e o acompanhamento de atendimentos e solicita├º├Áes.
-- Organizar o controle de doa├º├Áes e recursos dispon├¡veis.
-- Manter os dados dos volunt├írios organizados.
+- Centralizar as informações de cada instituição em um único sistema.
+- Permitir que diferentes instituições se cadastrem e utilizem a plataforma de forma independente.
+- Facilitar o registro e o acompanhamento de atendimentos e solicitações.
+- Organizar o controle de doações e recursos disponíveis.
+- Manter os dados dos voluntários organizados.
 - Facilitar o planejamento e o acompanhamento de eventos e campanhas.
-- Permitir que administradores gerenciem os usu├írios de suas institui├º├Áes.
-- Controlar o acesso ├ás informa├º├Áes conforme a institui├º├úo e o perfil de cada usu├írio.
+- Permitir que administradores gerenciem os usuários de suas instituições.
+- Controlar o acesso às informações conforme a instituição e o perfil de cada usuário.
 
 ## 6. Principais funcionalidades previstas
-- **Cadastro de institui├º├Áes:** permitir que uma institui├º├úo registre seus dados e crie sua conta na plataforma.
-- **Cria├º├úo do primeiro administrador:** criar a conta do administrador respons├ível pela institui├º├úo durante o cadastro inicial.
-- **Login e autentica├º├úo:** permitir o acesso individual dos usu├írios por meio de credenciais pr├│prias.
-- **Gest├úo de usu├írios:** permitir que o administrador cadastre e gerencie os colaboradores de sua institui├º├úo.
-- **Painel principal:** apresentar informa├º├Áes gerais e atividades que precisam de aten├º├úo.
-- **Gest├úo de atendimentos:** registrar solicita├º├Áes, respons├íveis e seus status.
-- **Gest├úo de doa├º├Áes e recursos:** registrar recebimentos, sa├¡das e disponibilidade de recursos.
-- **Gest├úo de volunt├írios:** cadastrar volunt├írios e organizar suas participa├º├Áes.
-- **Gest├úo de eventos e campanhas:** registrar atividades, datas, respons├íveis e participantes.
-- **Consulta e atualiza├º├úo de registros:** permitir visualizar, editar e excluir informa├º├Áes conforme as permiss├Áes definidas.
-- **Separa├º├úo dos dados institucionais:** garantir que cada institui├º├úo acesse apenas seus pr├│prios registros.
+- **Cadastro de instituições:** permitir que uma instituição registre seus dados e crie sua conta na plataforma.
+- **Criação do primeiro administrador:** criar a conta do administrador responsável pela instituição durante o cadastro inicial.
+- **Login e autenticação:** permitir o acesso individual dos usuários por meio de credenciais próprias.
+- **Gestão de usuários:** permitir que o administrador cadastre e gerencie os colaboradores de sua instituição.
+- **Painel principal:** apresentar informações gerais e atividades que precisam de atenção.
+- **Gestão de atendimentos:** registrar solicitações, responsáveis e seus status.
+- **Gestão de doações e recursos:** registrar recebimentos, saídas e disponibilidade de recursos.
+- **Gestão de voluntários:** cadastrar voluntários e organizar suas participações.
+- **Gestão de eventos e campanhas:** registrar atividades, datas, responsáveis e participantes.
+- **Consulta e atualização de registros:** permitir visualizar, editar e excluir informações conforme as permissões definidas.
+- **Separação dos dados institucionais:** garantir que cada instituição acesse apenas seus próprios registros.
 
-## 7. Tipos de usu├írios
-### Administrador da institui├º├úo
-O primeiro administrador ser├í criado durante o cadastro da institui├º├úo. Ele ser├í respons├ível por organizar o acesso ao sistema dentro de sua organiza├º├úo.
+## 7. Tipos de usuários
+### Administrador da instituição
+O primeiro administrador será criado durante o cadastro da instituição. Ele será responsável por organizar o acesso ao sistema dentro de sua organização.
 
-Suas fun├º├Áes poder├úo incluir:
+Suas funções poderão incluir:
 
-- Gerenciar os dados da institui├º├úo.
+- Gerenciar os dados da instituição.
 - Cadastrar, consultar e gerenciar os colaboradores.
-- Definir ou administrar as permiss├Áes dos usu├írios, conforme as regras do sistema.
-- Consultar e gerenciar os registros da pr├│pria institui├º├úo.
-- Acompanhar as atividades e as informa├º├Áes apresentadas no painel principal.
+- Definir ou administrar as permissões dos usuários, conforme as regras do sistema.
+- Consultar e gerenciar os registros da própria instituição.
+- Acompanhar as atividades e as informações apresentadas no painel principal.
 
 ### Colaborador
-Cada colaborador ter├í sua pr├│pria conta, vinculada ├á institui├º├úo em que trabalha.
+Cada colaborador terá sua própria conta, vinculada à instituição em que trabalha.
 
-Suas fun├º├Áes poder├úo incluir:
+Suas funções poderão incluir:
 
-- Consultar as informa├º├Áes permitidas pelo seu perfil.
+- Consultar as informações permitidas pelo seu perfil.
 - Registrar e atualizar atendimentos.
-- Cadastrar e atualizar informa├º├Áes sobre doa├º├Áes e recursos.
-- Organizar volunt├írios, eventos e campanhas conforme suas permiss├Áes.
+- Cadastrar e atualizar informações sobre doações e recursos.
+- Organizar voluntários, eventos e campanhas conforme suas permissões.
 
-As permiss├Áes espec├¡ficas ser├úo definidas durante o desenvolvimento. Nenhum dos dois perfis dever├í acessar os dados de outras institui├º├Áes.
+As permissões específicas serão definidas durante o desenvolvimento. Nenhum dos dois perfis deverá acessar os dados de outras instituições.
 
-## 8. Fluxo b├ísico de funcionamento
-1. Uma institui├º├úo acessa a plataforma e preenche o formul├írio de cadastro.
-2. O sistema registra a institui├º├úo e cria a conta de seu primeiro administrador.
-3. O administrador entra no sistema usando seu pr├│prio login e senha.
+## 8. Fluxo básico de funcionamento
+1. Uma instituição acessa a plataforma e preenche o formulário de cadastro.
+2. O sistema registra a instituição e cria a conta de seu primeiro administrador.
+3. O administrador entra no sistema usando seu próprio login e senha.
 4. O administrador cadastra os colaboradores que precisam de acesso.
-5. Cada colaborador recebe uma conta individual e acessa o sistema com suas pr├│prias credenciais.
-6. Os usu├írios acessam o painel e utilizam as funcionalidades permitidas para seus perfis.
-7. Os registros ficam associados ├á institui├º├úo correspondente.
-8. O backend verifica a autentica├º├úo, as permiss├Áes e a institui├º├úo vinculada ao usu├írio antes de permitir o acesso ou a altera├º├úo dos dados.
+5. Cada colaborador recebe uma conta individual e acessa o sistema com suas próprias credenciais.
+6. Os usuários acessam o painel e utilizam as funcionalidades permitidas para seus perfis.
+7. Os registros ficam associados à instituição correspondente.
+8. O backend verifica a autenticação, as permissões e a instituição vinculada ao usuário antes de permitir o acesso ou a alteração dos dados.
 
-Esse fluxo permitir├í que v├írias institui├º├Áes utilizem a mesma plataforma sem compartilhar seus registros entre si.
+Esse fluxo permitirá que várias instituições utilizem a mesma plataforma sem compartilhar seus registros entre si.
 
 ## 9. Tecnologias previstas
-- **HTML:** estrutura das p├íginas.
-- **CSS:** apar├¬ncia e organiza├º├úo visual da interface.
-- **JavaScript:** funcionalidades e manipula├º├úo dos elementos da p├ígina.
-- **Fetch API:** comunica├º├úo entre o front-end e o back-end.
-- **Node.js:** execu├º├úo do c├│digo JavaScript no servidor.
-- **Express:** cria├º├úo das rotas e da API.
-- **MySQL:** armazenamento das informa├º├Áes em um banco de dados relacional.
-- **JWT:** autentica├º├úo dos usu├írios e apoio ao controle de acesso.
-- **Git e GitHub:** versionamento, armazenamento e acompanhamento da evolu├º├úo do projeto.
+- **HTML:** estrutura das páginas.
+- **CSS:** aparência e organização visual da interface.
+- **JavaScript:** funcionalidades e manipulação dos elementos da página.
+- **Fetch API:** comunicação entre o front-end e o back-end.
+- **Node.js:** execução do código JavaScript no servidor.
+- **Express:** criação das rotas e da API.
+- **MySQL:** armazenamento das informações em um banco de dados relacional.
+- **JWT:** autenticação dos usuários e apoio ao controle de acesso.
+- **Git e GitHub:** versionamento, armazenamento e acompanhamento da evolução do projeto.
 
 ## 10. Estrutura inicial do projeto
 conecta/
-Ôö£ÔöÇÔöÇ backend/
-Ôöé   Ôö£ÔöÇÔöÇ routes/
-Ôöé   Ôö£ÔöÇÔöÇ controllers/
-Ôöé   Ôö£ÔöÇÔöÇ middlewares/
-Ôöé   Ôö£ÔöÇÔöÇ database/
-Ôöé   ÔööÔöÇÔöÇ server.js
-Ôö£ÔöÇÔöÇ frontend/
-Ôöé   Ôö£ÔöÇÔöÇ index.html
-Ôöé   Ôö£ÔöÇÔöÇ css/
-Ôöé   ÔööÔöÇÔöÇ js/
-Ôö£ÔöÇÔöÇ sql/
-Ôö£ÔöÇÔöÇ README.md
-ÔööÔöÇÔöÇ .gitignore
+├── backend/
+│   ├── routes/
+│   ├── controllers/
+│   ├── middlewares/
+│   ├── database/
+│   └── server.js
+├── frontend/
+│   ├── index.html
+│   ├── css/
+│   └── js/
+├── sql/
+├── README.md
+└── .gitignore
 
-## 11. Organiza├º├úo do desenvolvimento
-O projeto ser├í desenvolvido em etapas. Inicialmente, ser├úo definidos o problema, a solu├º├úo e a estrutura do sistema. Em seguida, ser├úo implementados o banco de dados relacional, o cadastro de institui├º├Áes, a cria├º├úo do primeiro administrador, o login, a autentica├º├úo e as permiss├Áes de acesso.
+## 11. Organização do desenvolvimento
+O projeto será desenvolvido em etapas. Inicialmente, serão definidos o problema, a solução e a estrutura do sistema. Em seguida, serão implementados o banco de dados relacional, o cadastro de instituições, a criação do primeiro administrador, o login, a autenticação e as permissões de acesso.
 
-Nas etapas seguintes, ser├úo desenvolvidas as funcionalidades de gerenciamento, a integra├º├úo entre a interface, a API e o banco de dados, al├®m das verifica├º├Áes necess├írias para manter os dados de cada institui├º├úo separados.
+Nas etapas seguintes, serão desenvolvidas as funcionalidades de gerenciamento, a integração entre a interface, a API e o banco de dados, além das verificações necessárias para manter os dados de cada instituição separados.
 
-O c├│digo-fonte e os scripts SQL ser├úo mantidos em um ├║nico reposit├│rio no GitHub, com documenta├º├úo atualizada ao longo do desenvolvimento. Arquivos de depend├¬ncias instaladas, credenciais, senhas e tokens n├úo ser├úo publicados no reposit├│rio.
+O código-fonte e os scripts SQL serão mantidos em um único repositório no GitHub, com documentação atualizada ao longo do desenvolvimento. Arquivos de dependências instaladas, credenciais, senhas e tokens não serão publicados no repositório.
 
 
 ## PARTE/ENTREGA 2 !!!!!!!!!!
 
 ## 12. Banco de dados
 
-O Conecta utiliza o MySQL como sistema de gerenciamento de banco de dados. O banco de dados `conecta` possui tabelas relacionadas por meio de chaves prim├írias e estrangeiras.
+O Conecta utiliza o MySQL como sistema de gerenciamento de banco de dados. O banco de dados `conecta` possui tabelas relacionadas por meio de chaves primárias e estrangeiras.
 
-As principais tabelas s├úo:
+As principais tabelas são:
 
-- **instituicoes:** armazena os dados das institui├º├Áes cadastradas.
-- **usuarios:** armazena os dados dos administradores e colaboradores, vinculados ├ás suas institui├º├Áes.
-- **atendimentos:** registra os atendimentos realizados pelas institui├º├Áes.
-- **doacoes:** armazena informa├º├Áes sobre as doa├º├Áes recebidas.
-- **recursos:** controla os recursos dispon├¡veis.
-- **voluntarios:** mant├®m os dados dos volunt├írios.
-- **eventos:** registra os eventos organizados pelas institui├º├Áes.
+- **instituicoes:** armazena os dados das instituições cadastradas.
+- **usuarios:** armazena os dados dos administradores e colaboradores, vinculados às suas instituições.
+- **atendimentos:** registra os atendimentos realizados pelas instituições.
+- **doacoes:** armazena informações sobre as doações recebidas.
+- **recursos:** controla os recursos disponíveis.
+- **voluntarios:** mantém os dados dos voluntários.
+- **eventos:** registra os eventos organizados pelas instituições.
 
-O script de cria├º├úo dessas tabelas est├í dispon├¡vel em `sql/conecta.sql`.
+O script de criação dessas tabelas está disponível em `sql/conecta.sql`.
 
-## 13. Autentica├º├úo e controle de acesso
+## 13. Autenticação e controle de acesso
 
-O sistema possui cadastro de institui├º├Áes e login de usu├írios integrados ao banco de dados.
+O sistema possui cadastro de instituições e login de usuários integrados ao banco de dados.
 
-Durante o cadastro, a institui├º├úo cria sua conta e seu primeiro administrador. As senhas s├úo protegidas utilizando hash com a biblioteca `bcryptjs`.
+Durante o cadastro, a instituição cria sua conta e seu primeiro administrador. As senhas são protegidas utilizando hash com a biblioteca `bcryptjs`.
 
-A autentica├º├úo utiliza JSON Web Token (JWT), permitindo identificar os usu├írios e controlar o acesso ├ás rotas protegidas da API.
+A autenticação utiliza JSON Web Token (JWT), permitindo identificar os usuários e controlar o acesso às rotas protegidas da API.
 
 O backend possui dois middlewares principais:
 
-- **Autentica├º├úo:** verifica se o usu├írio est├í autenticado por meio de um token v├ílido.
-- **Autoriza├º├úo:** verifica se o perfil do usu├írio possui permiss├úo para acessar determinada funcionalidade.
+- **Autenticação:** verifica se o usuário está autenticado por meio de um token válido.
+- **Autorização:** verifica se o perfil do usuário possui permissão para acessar determinada funcionalidade.
 
-Os usu├írios possuem dois perfis: administrador e colaborador.
+Os usuários possuem dois perfis: administrador e colaborador.
 
-Al├®m disso, as consultas e opera├º├Áes s├úo vinculadas ao identificador da institui├º├úo do usu├írio autenticado, mantendo os registros separados entre as institui├º├Áes.
+Além disso, as consultas e operações são vinculadas ao identificador da instituição do usuário autenticado, mantendo os registros separados entre as instituições.
 
-## 14. Execu├º├úo do backend
+## 14. Execução do backend
 
-Para executar o backend localmente, ├® necess├írio ter o Node.js e o MySQL instalados.
+Para executar o backend localmente, é necessário ter o Node.js e o MySQL instalados.
 
-1. Instalar as depend├¬ncias do projeto com `npm install`.
-2. Configurar as vari├íveis de ambiente no arquivo `.env`, incluindo os dados de conex├úo com o MySQL e a chave secreta do JWT.
+1. Instalar as dependências do projeto com `npm install`.
+2. Configurar as variáveis de ambiente no arquivo `.env`, incluindo os dados de conexão com o MySQL e a chave secreta do JWT.
 3. Garantir que o banco de dados `conecta` esteja criado e que as tabelas tenham sido configuradas utilizando o script `sql/conecta.sql`.
 4. Iniciar o servidor com `npm run dev`.
 
-Ap├│s a inicializa├º├úo, a API estar├í dispon├¡vel em `http://localhost:3000`.
+Após a inicialização, a API estará disponível em `http://localhost:3000`.
 
-## 15. Organiza├º├úo e seguran├ºa
+## 15. Organização e segurança
 
-O projeto utiliza arquivos separados para organizar as rotas, os controladores, os middlewares e a conex├úo com o banco de dados.
+O projeto utiliza arquivos separados para organizar as rotas, os controladores, os middlewares e a conexão com o banco de dados.
 
-O arquivo `.env` cont├®m configura├º├Áes privadas e n├úo deve ser publicado no GitHub. A pasta `node_modules` tamb├®m n├úo precisa ser enviada ao reposit├│rio, pois as depend├¬ncias podem ser instaladas por meio do `package.json`.
+O arquivo `.env` contém configurações privadas e não deve ser publicado no GitHub. A pasta `node_modules` também não precisa ser enviada ao repositório, pois as dependências podem ser instaladas por meio do `package.json`.
 
 
 ## PARTE/ENTREGA 3 — CRUD Completo e Integração Front-end/Back-end
