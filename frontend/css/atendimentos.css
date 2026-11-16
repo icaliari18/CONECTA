@@ -434,3 +434,52 @@ td .btn-excluir:hover {
     border-color: #C0392B;
     box-shadow: 0 2px 5px rgba(192, 57, 43, 0.2);
 }
+
+/* COLUNA DE AÇÕES E BOTÕES ALINHADOS LADO A LADO */
+td:last-child {
+    white-space: nowrap;
+}
+
+.acoes-linha {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* BADGES DE STATUS UNIFICADOS */
+.badge-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 800;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
+/* Pendente / Planejado (Amarelo) */
+.status-pendente,
+.status-planejado {
+    background-color: #FFF3D6;
+    color: #A87519;
+}
+
+/* Em andamento / Confirmado (Azul Claro) */
+.status-em-andamento,
+.status-confirmado {
+    background-color: #E1F0F5;
+    color: #397A91;
+}
+
+/* Concluído / Realizado (Verde) */
+.status-concluido,
+.status-realizado {
+    background-color: #E1F1EC;
+    color: #32845E;
+}
+
+/* Cancelado (Vermelho) */
+.status-cancelado {
+    background-color: #FBEAEA;
+    color: #C0392B;
+}
