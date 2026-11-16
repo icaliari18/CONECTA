@@ -99,26 +99,45 @@ async function carregarAtendimentos() {
             return;
         }
 
+        const obterClasseStatus = (status) => {
+            const limpo = String(status || '').toLowerCase().trim().replace(/\s+/g, '-');
+            return `badge-status status-${limpo}`;
+        };
+
+        const nomesStatus = {
+            'pendente': 'Pendente',
+            'em andamento': 'Em andamento',
+            'concluido': 'Concluído'
+        };
+
         lista.innerHTML = dados.map(atendimento => `
             <tr>
                 <td>${escaparHTML(atendimento.nome_atendido)}</td>
                 <td>${escaparHTML(atendimento.tipo_atendimento)}</td>
                 <td>${formatarData(atendimento.data_atendimento)}</td>
-                <td>${escaparHTML(atendimento.status)}</td>
                 <td>
-                    <button
-                        type="button"
-                        onclick="editarAtendimento(${Number(atendimento.id)})">
-                        Editar
-                    </button>
-
-                    ${usuario.tipo === 'administrador' ? `
+                    <span class="${obterClasseStatus(atendimento.status)}">
+                        ${nomesStatus[atendimento.status] || escaparHTML(atendimento.status)}
+                    </span>
+                </td>
+                <td>
+                    <div class="acoes-linha">
                         <button
                             type="button"
-                            onclick="excluirAtendimento(${Number(atendimento.id)})">
-                            Excluir
+                            class="btn-editar"
+                            onclick="editarAtendimento(${Number(atendimento.id)})">
+                            Editar
                         </button>
-                    ` : ''}
+
+                        ${usuario.tipo === 'administrador' ? `
+                            <button
+                                type="button"
+                                class="btn-excluir"
+                                onclick="excluirAtendimento(${Number(atendimento.id)})">
+                                Excluir
+                            </button>
+                        ` : ''}
+                    </div>
                 </td>
             </tr>
         `).join('');
