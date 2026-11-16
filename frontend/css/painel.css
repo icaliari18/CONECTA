@@ -398,21 +398,28 @@ footer {
         padding: 25px;
     }
 }
-/* BOT├O SAIR */
+
+
+/* BOTÃO SAIR */
 .botao-sair {
-    margin-left: 12px;
-    background-color: transparent;
-    color: #c94a4a;
-    border: 1px solid #c94a4a;
-    padding: 6px 14px;
-    border-radius: 6px;
+    margin-left: 8px;
+    background-color: #FFF5F5;
+    color: #C0392B;
+    border: 1px solid #F5C6CB;
+    padding: 7px 16px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .botao-sair:hover {
-    background-color: #c94a4a;
-    color: #ffffff;
+    background-color: #C0392B;
+    color: #FFFFFF;
+    border-color: #C0392B;
+    box-shadow: 0 2px 6px rgba(192, 57, 43, 0.25);
 }
