@@ -198,3 +198,58 @@ A entidade de atendimentos contempla todas as operações fundamentais exigidas:
 - **Fetch API:** Comunicação assíncrona com envio de cabeçalho `Authorization: Bearer <token>` em todas as requisições protegidas.
 - **Segurança na exibição:** Sanitização e escape de caracteres HTML para prevenir injeções de script (XSS).
 - **Controle de sessão:** Redirecionamento automático para a tela de login caso o token não esteja presente ou seja inválido, além de botão de encerramento de sessão (*Logout*).
+
+## PARTE/ENTREGA 4 — Finalização e Documentação do Projeto!!!!!!!!!!!!
+
+### 19. Desenvolvimento das demais funcionalidades CRUD
+
+Além da entidade principal (Atendimentos), foram desenvolvidos os módulos de gerenciamento de:
+
+- **Doações:** cadastro, consulta, atualização e exclusão de doações recebidas pelas instituições.
+- **Recursos:** controle dos recursos disponíveis, incluindo descrição, quantidade e unidade de medida.
+- **Voluntários:** cadastro e gerenciamento das informações dos voluntários vinculados à instituição.
+- **Eventos:** registro e gerenciamento dos eventos organizados pelas instituições.
+
+Todos os módulos possuem integração entre o front-end, o back-end e o banco de dados MySQL, seguindo a estrutura de rotas, controladores e consultas utilizadas no projeto.
+
+As operações respeitam o vínculo dos registros com a instituição do usuário autenticado, mantendo a separação das informações.
+
+### 20. Interface do sistema
+
+O front-end foi desenvolvido com HTML, CSS e JavaScript, apresentando uma interface organizada para facilitar a utilização do sistema.
+
+As principais telas incluem:
+
+- Tela de cadastro de instituições e administrador.
+- Tela de login.
+- Painel principal.
+- Páginas de atendimentos, doações, recursos, voluntários e eventos.
+
+A interface permite navegar entre os módulos e realizar as operações de gerenciamento por meio de formulários e tabelas que apresentam os registros cadastrados.
+
+### 21. Testes e validações
+
+Durante o desenvolvimento, foram realizados testes para verificar o funcionamento das principais funcionalidades do sistema.
+
+Foram testados:
+
+- Conexão entre o backend e o banco de dados MySQL.
+- Cadastro de instituições e criação do primeiro administrador.
+- Login e autenticação dos usuários.
+- Acesso às rotas protegidas.
+- Permissões de administrador e colaborador.
+- Operações CRUD dos módulos implementados.
+- Bloqueio de acesso a funcionalidades restritas.
+- Separação dos registros conforme a instituição vinculada ao usuário.
+
+Os testes foram realizados por meio de scripts JavaScript, que enviam requisições à API e verificam as respostas recebidas.
+
+### 22. Considerações finais
+
+O desenvolvimento do Conecta permitiu construir um sistema web para auxiliar instituições sociais na organização e no gerenciamento de suas atividades.
+
+A plataforma reúne funcionalidades de atendimentos, doações, recursos, voluntários e eventos em um único ambiente, utilizando uma estrutura integrada entre front-end, back-end e banco de dados.
+
+O sistema também implementa autenticação, controle de permissões e separação dos dados por instituição, permitindo que diferentes organizações utilizem a mesma plataforma mantendo seus registros independentes.
+
+Dessa forma, o Conecta apresenta uma solução digital para facilitar a organização das atividades institucionais e contribuir para uma gestão mais centralizada das informações.
